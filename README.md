@@ -1,7 +1,7 @@
 # Nuclesome_interactom
-Part of a project dedicated to establishment of proteins interacting with nucleosomes
+**Part of a project dedicated to establishment of proteins interacting with nucleosomes.**
 
-This part offers code for 
+The most part of pdb
 
 ## Dependencies
 1. python 3.*
