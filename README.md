@@ -1,7 +1,7 @@
 # Nuclesome_interactom
 **Part of a project dedicated to establishment of interactions of human histones and non-nucleosome human proteins.**
 
-Prognose interactions of human histones with non-nucleosome human proteins based on homology of these proteins to those derived from emdb and pdb for other species. Human homologues to non-human protein complexes from emdb and pdb pose as potential human interactors to be investigated in future.
+Propose interactions of human histones with non-nucleosome human proteins based on homology of these proteins to those derived from emdb and pdb for other species. Human homologues to non-human protein complexes from emdb and pdb pose as potential human interactors to be investigated in future.
 
 ## Files
 1. *pdb_list.csv* - list of pdb structures containing histones obtained during previous work.
