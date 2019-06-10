@@ -21,7 +21,7 @@ Establish interactions of human histones with human non-nucleosome proteins base
 7. Write a table with human genes for each pdb structure.
 ### wordcloud.py
 1. Sort genes from obtained tables according to *histone_genes.csv* on histone and non-histone proteins.
-2. Generate two txt files to be used by https://www.wordclouds.com/. Gene letter size is proportional to frequency of according protein being represented in pdb files.
+2. Generate two text files with histone and non-histone genes to be used by https://www.wordclouds.com/. Gene letter size is proportional to frequency of according protein being represented in pdb files.
 
 ## Dependencies
 1. python 3.*
