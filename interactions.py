@@ -71,7 +71,7 @@ for key, value in accession_dict.items():
                     if field['GBQualifier_name'] == 'gene':
                         HGNC_dict[key].append(field['GBQualifier_value'])
 
-# Write a table with human genes for each pdb structure                       
+# Write a table with human genes for each pdb structure
 with open('pdb_table.csv','w') as f:
     f.write('PDB,Chain,HGNC\n')
     for key, value in chaindict.items():
