@@ -1,7 +1,7 @@
 # Nuclesome_interactom
 **Part of a project dedicated to establishment of interactions of histones and non-nucleosome proteins.**
 
-Establish interactions of human histones with human non-nucleosome proteins based on homology of these proteins to those derived from emdb and pdb for other species. Human homologues to non-human protein complexes from emdb and pdb pose as potential human interactors to be investigated in future research.
+Establish interactions of human histones with human non-nucleosome proteins based on homology of these proteins to those derived from emdb and pdb for other species. Human homologues to non-human protein complexes from emdb and pdb pose as potential human interactors to be investigated in future.
 
 ## Files
 1. *pdb_list.csv* - list of pdb structures containing histones obtained during previous work.
@@ -10,7 +10,8 @@ Establish interactions of human histones with human non-nucleosome proteins base
 4. *emdbdumps.xml* - downloaded from [EMDB](https://www.ebi.ac.uk/pdbe/emdb/searchForm.html/) by query 'histone'.
 5. *histone_genes.csv* - list of all known human histone genes obtained during previous work.
 
-## Description 
+## Description
+### interactions.py
 1. For EMDB database download file with structures containing histones and derive pdb identifiers that those structures were adjusted to.
 2. Find Uniprot identifiers of proteins listed in pdb structures. We can't use FASTA sequencies from pdb entries directly because they are often incomplete. 
 3. Create database based on *human.protein.faa* with all known human genes that is needed for ncbi-blast-2.9.0+.
@@ -18,6 +19,9 @@ Establish interactions of human histones with human non-nucleosome proteins base
 5. Perform BLAST alignment of FASTA sequences with human genes database and keep accession numbers of best hits.
 6. Derive HGNC gene names by accession numbers.
 7. Write a table with human genes for each pdb structure.
+### wordcloud.py
+1. Sort genes from obtained tables according to *histone_genes.csv* on histone and non-histone proteins.
+2. Generate two txt files to be used by https://www.wordclouds.com/. Gene letter size is proportional to frequency of according protein being represented in pdb files.
 
 ## Dependencies
 1. python 3.*
