@@ -1,13 +1,14 @@
 # Nuclesome_interactom
-**Part of a project dedicated to establishment of proteins interacting with nucleosomes.**
+**Part of a project dedicated to establishment of interactions of histones and non-nucleosome proteins.**
 
-Establish interactions of human histones with human not-nucleosome proteins based on homology of these proteins to those derived from emdb and pdb for other species. In other words human homologues to non-human protein complexes from emdb and pdb pose as potential human interactors to be investigated in future research.
+Establish interactions of human histones with human non-nucleosome proteins based on homology of these proteins to those derived from emdb and pdb for other species. Human homologues to non-human protein complexes from emdb and pdb pose as potential human interactors to be investigated in future research.
 
 ## Files
-1. *pdb_list.csv* - list of pdb structures containing histones generated during previous work.
+1. *pdb_list.csv* - list of pdb structures containing histones obtained during previous work.
 2. *pdb_chain_uniprot.csv* - from [SIFTS](https://www.ebi.ac.uk/pdbe/docs/sifts/quick.html).
 3. *human.protein.faa\** - from refseq database of NCBI(ftp://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/mRNA_Prot/). 4 files to be merged together into *human.protein.faa*.
 4. *emdbdumps.xml* - downloaded from [EMDB](https://www.ebi.ac.uk/pdbe/emdb/searchForm.html/) by query 'histone'.
+5. *histone_genes.csv* - list of all known human histone genes obtained during previous work.
 
 ## Description 
 1. For EMDB database download file with structures containing histones and derive pdb identifiers that those structures were adjusted to.
