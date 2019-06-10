@@ -1,5 +1,5 @@
 # Generate input file for generating word cloud with https://www.wordclouds.com/
-# Size of gene letters is proportional to frequency of according protein being represented in pdb files
+# Gene letter size is proportional to frequency of according protein being represented in pdb files
 
 # Select database
 database = 'pdb'
