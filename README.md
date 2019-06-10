@@ -1,7 +1,7 @@
 # Nuclesome_interactom
-**Part of a project dedicated to establishment of interactions of histones and non-nucleosome proteins.**
+**Part of a project dedicated to establishment of interactions of human histones and non-nucleosome human proteins.**
 
-Establish interactions of human histones with human non-nucleosome proteins based on homology of these proteins to those derived from emdb and pdb for other species. Human homologues to non-human protein complexes from emdb and pdb pose as potential human interactors to be investigated in future.
+Prognose interactions of human histones with non-nucleosome human proteins based on homology of these proteins to those derived from emdb and pdb for other species. Human homologues to non-human protein complexes from emdb and pdb pose as potential human interactors to be investigated in future.
 
 ## Files
 1. *pdb_list.csv* - list of pdb structures containing histones obtained during previous work.
@@ -17,7 +17,7 @@ Establish interactions of human histones with human non-nucleosome proteins base
 3. Create database based on *human.protein.faa* with all known human genes that is needed for ncbi-blast-2.9.0+.
 4. Download FASTA sequences matching Uniprot identifiers.
 5. Perform BLAST alignment of FASTA sequences with human genes database and keep accession numbers of best hits.
-6. Derive HGNC gene names by accession numbers.
+6. Obtain HGNC gene names by accession numbers using Entrez.
 7. Write a table with human genes for each pdb structure.
 ### wordcloud.py
 1. Sort genes from obtained tables according to *histone_genes.csv* on histone and non-histone proteins.
