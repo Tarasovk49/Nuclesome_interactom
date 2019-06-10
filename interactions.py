@@ -41,6 +41,8 @@ db_name = 'human_protdb'
 os.system('ncbi-blast-2.9.0+/bin/makeblastdb -dbtype prot -in %s -out %s > /dev/null'%(faa_file,db_name))
 
 # Download FASTA sequences matching Uniprot identifiers
+os.system('rm -f ' + database + '_fastas')
+os.system('mkdir ' + database + '_fastas')
 for key in lists[database]:
     for field in uniprotdict[key]:
         os.system('wget -P ./' + database + '_fastas/ -nv http://www.uniprot.org/uniprot/%s.fasta'%(field))
@@ -50,6 +52,8 @@ os.system('rm ' + database + '_fastas/*.fasta.*')
 from Bio.Blast.Applications import NcbiblastpCommandline
 from Bio.Blast import NCBIXML
 
+os.system('rm -f ' + database + '_blasts')
+os.system('mkdir ' + database + '_blasts')
 accession_dict = {}
 for key in lists[database]:
     accession_dict[key] = list()
