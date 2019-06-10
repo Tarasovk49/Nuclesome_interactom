@@ -6,7 +6,7 @@ Establish interactions of human histones with human not-nucleosome proteins base
 ## Files
 1. *pdb_list.csv* - list of pdb structures containing histones generated during previous work.
 2. *pdb_chain_uniprot.csv* - from [SIFTS](https://www.ebi.ac.uk/pdbe/docs/sifts/quick.html).
-3. *human.protein.faa* - from refseq database of [NCBI](ftp://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/mRNA_Prot/). All 7 files merged together.
+3. *human.protein.faa\** - from refseq database of [NCBI](ftp://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/mRNA_Prot/). All 7 files merged together.
 4. *emdbdumps.xml* - downloaded from [EMDB](https://www.ebi.ac.uk/pdbe/emdb/searchForm.html/) by query 'histone'.
 
 ## Description 
