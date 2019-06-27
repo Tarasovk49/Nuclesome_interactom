@@ -28,7 +28,7 @@ sudo apt-get install mysql-server
 systemctl status mysql
 mysql_secure_installation
 ```
-To start MySQL server
+To enter MySQL shell
 ```
 mysqladmin -u root -p
 ```
@@ -36,5 +36,62 @@ mysqladmin -u root -p
 ```
 cd test_project
 ```
-Modify *settings.py* in the field ALLOWED_HOSTS = \['your-server-ip']
+Modify *settings.py* in the field ```ALLOWED_HOSTS = \['your-server-ip']```
 To start server run ```python manage.py runserver your-server-ip:8000```
+Modify *settings.py* to add path to static files (JavaScript, CSS and other)
+```
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+```
+### Connect your Django project to MySQL database
+In order to use MySQL with our project, we will need a Python 3 database connector library compatible with Django. So, we will install the database connector, mysqlclient, which is a forked version of MySQLdb.
+```
+sudo apt-get install python3-dev
+sudo apt-get install python3-dev libmysqlclient-dev
+pip install mysqlclient
+sudo apt-get install mysql-server
+```
+Verify that the MySQL service is running:
+```
+systemctl status mysql.service
+```
+Run ```sudo systemctl start mysql``` if MySQL service is not running.
+To enter MySQL shell:
+```mysql -u root -p```
+You can run some commands:
+```SHOW DATABASES;```
+```CREATE DATABASE nucleosome_data;```
+To use MySQL as database for Django modify *settings.py*:
+```
+# Database
+# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'read_default_file': '/etc/mysql/my.cnf',
+        },
+    }
+}
+```
+Then modify *my.cnf*:
+```
+sudo pluma /etc/mysql/my.cnf
+```
+```
+[client]
+database = nuclosome_data
+user = root
+password = your_password
+default-character-set = utf8
+```
+Then run:
+```
+sudo systemctl daemon-reload
+sudo systemctl restart mysql
+```
+Then check if Django server can be launched:
+```
+python manage.py runserver your-server-ip:8000
+```
