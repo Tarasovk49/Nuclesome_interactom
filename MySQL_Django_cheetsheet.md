@@ -56,11 +56,15 @@ Verify that the MySQL service is running:
 systemctl status mysql.service
 ```
 Run ```sudo systemctl start mysql``` if MySQL service is not running.
+
 To enter MySQL shell:
 ```mysql -u root -p```
+
 You can run some commands:
+
 ```SHOW DATABASES;```
 ```CREATE DATABASE nucleosome_data;```
+
 To use MySQL as database for Django modify *settings.py*:
 ```
 # Database
