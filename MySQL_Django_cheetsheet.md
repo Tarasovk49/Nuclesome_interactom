@@ -4,6 +4,7 @@
 2. https://www.digitalocean.com/community/tutorials/how-to-install-the-latest-mysql-on-ubuntu-16-04#step-2-%E2%80%94-installing-mysql
 3. https://www.digitalocean.com/community/tutorials/how-to-install-django-and-set-up-a-development-environment-on-ubuntu-16-04
 4. https://www.digitalocean.com/community/tutorials/how-to-create-a-django-app-and-connect-it-to-a-database
+5. https://docs.djangoproject.com/en/2.2/intro/tutorial01/
 ### Install Django
 ```
 conda create -n djangoenv python=3.6
