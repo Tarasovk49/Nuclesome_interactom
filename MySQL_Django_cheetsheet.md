@@ -93,12 +93,12 @@ user = root
 password = your_password
 default-character-set = utf8
 ```
-Then run:
+Run:
 ```
 sudo systemctl daemon-reload
 sudo systemctl restart mysql
 ```
-Then check if Django server can be launched:
+Check if Django server can be launched:
 ```
 python manage.py runserver your-server-ip:8000
 ```
