@@ -5,6 +5,7 @@
 3. https://www.digitalocean.com/community/tutorials/how-to-install-django-and-set-up-a-development-environment-on-ubuntu-16-04
 4. https://www.digitalocean.com/community/tutorials/how-to-create-a-django-app-and-connect-it-to-a-database
 5. https://docs.djangoproject.com/en/2.2/intro/tutorial01/
+6. https://www.digitalocean.com/community/tutorials/how-to-create-django-models
 ### Install Django
 ```
 conda create -n djangoenv python=3.6
