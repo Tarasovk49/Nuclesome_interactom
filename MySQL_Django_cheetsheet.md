@@ -12,6 +12,7 @@
 conda create -n djangoenv python=3.6
 conda install -c anaconda django
 ```
+Navigate to directory where you want to store your code and start a project
 ```
 django-admin startproject test_project
 ```
