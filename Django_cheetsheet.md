@@ -43,7 +43,7 @@ first_app/
     views.py
 ```
 Create file `urls.py`. Modify files `views.py` and `urls.py`. Then add to your url for view to `test_project/urls.py`.
-**urls.py**
+**first_app/urls.py**
 ```
 from django.urls import path
 from . import views
@@ -55,7 +55,7 @@ urlpatterns = [
     path('<int:question_id>/vote/', views.vote, name='vote'),
 ]
 ```
-**views.py**
+**first_app/views.py**
 ```
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse, Http404, HttpResponseRedirect
@@ -124,3 +124,56 @@ def vote(request, question_id):
         # user hits the Back button.
         return HttpResponseRedirect(reverse('first_app:results', args=(question.id,)))
 ```        
+**test_project/urls.py**
+```
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('first_app/', include('first_app.urls')),
+    path('admin/', admin.site.urls),
+]
+```
+Then let's create some templates. Create subdirectory `first_app/templates/first_app`. Inside it create 3 files `detail.html`,`index.html`,`results.html`.
+**detail.html**
+```
+<h1>{{ question.question_text }}</h1>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'first_app:vote' question.id %}" method="post">
+{% csrf_token %}
+{% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+{% endfor %}
+<input type="submit" value="Vote">
+</form>
+```
+**index.html**
+```
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'first_app/style.css' %}">
+
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="{% url 'first_app:detail' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+```
+**results.html**
+```
+<h1>{{ question.question_text }}</h1>
+
+<ul>
+{% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'first_app:detail' question.id %}">Vote again?</a>
+```
