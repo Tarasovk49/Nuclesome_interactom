@@ -1,10 +1,10 @@
 # Lab journal
 
 ### 13.09.19 Friday
-#### Processing script for IntAct written.
+#### [Processing script](IntAct_processing.ipynb) for IntAct written.
 
 ### 12.09.19 Thursday
-#### Processing script for BioGRID written.
+#### [Processing script](BioGRID_processing.ipynb) for BioGRID written.
 
 ### 11.09.19 Wednesday
 #### Updating scripts for BioGRID, IntAct, STRING are finally written.
