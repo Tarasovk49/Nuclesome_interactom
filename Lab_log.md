@@ -2,6 +2,7 @@
 
 ### 13.09.19 Friday
 #### [Processing script](IntAct_processing.ipynb) for IntAct written.
+#### [Processing script](STRING_processing.ipynb) for STRING written.
 
 ### 12.09.19 Thursday
 #### [Processing script](BioGRID_processing.ipynb) for BioGRID written.
