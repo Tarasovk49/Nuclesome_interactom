@@ -1,7 +1,7 @@
 # Lab journal
 
 ### 17.09.19 Tuesday
-#### Fixed issues concerning deletion of rows containing no HGNC identifiers for genes (82 from 2720) for IntAct processing script.
+#### Fixed issues concerning deletion of rows containing no HGNC identifiers for interacting proteins (82 rows from 2720) for IntAct processing script.
 #### H1 histone interactions are now also counted for all databases.
 
 ### 13.09.19 Friday
