@@ -25,7 +25,7 @@
 |3|1|1|Subinteractors2|
 |-|-|-|-|
 
-Must contain methods *Get_parent*, *Get_children*.
+Must contain methods *get_parent*, *get_children*.
 
 7. 3D_interaction
 8. 3D_structure
