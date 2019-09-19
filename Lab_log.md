@@ -44,6 +44,7 @@ Some basic principles:
 - Any kind of information must not be redundant. It must be stored in single copy.
 - Defaults for columns must be specified and columns that cannot be empty must be specified.
 
+Also need to check for the application to build database scheme from django tables.
 ### 17.09.19 Tuesday
 #### Fixed issues concerning deletion of rows containing no HGNC identifiers for interacting proteins (82 rows out of 2720) for IntAct processing script.
 #### H1 histone interactions are now also counted for all databases.
