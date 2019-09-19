@@ -1,7 +1,7 @@
 # Lab journal
 
 ### 19.09.19 Thursday
-#### Part of *models.py* and *browse/management/commands/builddb.py* is written.
+#### Part of *browse/models.py* and *browse/management/commands/builddb.py* is written.
 
 #### Features of database
 **Tables = django classes:**
