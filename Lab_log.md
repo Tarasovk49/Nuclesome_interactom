@@ -7,8 +7,16 @@
 2. Histone_variant
 3. Histone_type
 4. Interaction
+
+| PK | Type | Method | Database | Probability |
+|:---:|:---:|:---:|:---:|:---:|
+|-|-|-|-|-|
 5. Interactor_gene
-6. Classification.
+
+| PK | Gene id | Protein id | Node1 | Node2 |
+|:---:|:---:|:---:|:---:|:---:|
+|-|-|-|-|-|
+6. Classification
 
 | Node | Parent | Rank | Description |
 |:---:|:---:|:---:|:---:|
@@ -21,7 +29,7 @@
 9. PDB_homology
 10. DB_info
 
-
+Plan is to create first six classes.
 
 
 ### 17.09.19 Tuesday
