@@ -5,15 +5,15 @@
 
 #### Features of database
 **Tables = django classes:**
-1. Histone_gene
-2. Histone_variant
+1. Histone
+2. Мariant
 3. Histone_type
 4. Interaction
 
 | PK | Type | Method | Database | Probability |
 |:---:|:---:|:---:|:---:|:---:|
 |-|-|-|-|-|
-5. Interactor_gene
+5. Interactor
 
 | PK | Gene id | Protein id | Node1 | Node2 |
 |:---:|:---:|:---:|:---:|:---:|
