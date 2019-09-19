@@ -32,10 +32,10 @@ Must contain methods *Get_parent*, *Get_children*.
 10. DB_info
 
 Plan is to create first six classes - *browse/models.py*.
-*browse/views.py* - generate pages.
-*browse/templates.py* - scaffold of web-pages, where data is uploaded.
-*browse/urls.py* - manage queries.
-*browse/management/commands/buildvariants.py* - functions to rebuild database.
+- *browse/views.py* - generate pages.
+- *browse/templates.py* - scaffold of web-pages, where data is uploaded.
+- *browse/urls.py* - manage queries.
+- *browse/management/commands/buildvariants.py* - functions to rebuild database.
 Some basic principles:
 1. Every table is some kinf of entity - histone genes, interactor genes, interactions between histones and interactors.
 2. Every table must contain column with unique values - primary key table (PK).
