@@ -26,6 +26,7 @@
 |-|-|-|-|
 
 Must contain methods *Get_parent*, *Get_children*.
+
 7. 3D_interaction
 8. 3D_structure
 9. PDB_homology
