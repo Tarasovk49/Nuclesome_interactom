@@ -12,6 +12,9 @@
 
 | Node | Parent | Rank | Description |
 |:---:|:---:|:---:|:---:|
+|1|-|0|Interactors|
+|2|1|1|Subinteractors1|
+|3|1|1|Subinteractors2|
 |-|-|-|-|
 7. 3D_interaction
 8. 3D_structure
@@ -22,7 +25,7 @@
 
 
 ### 17.09.19 Tuesday
-#### Fixed issues concerning deletion of rows containing no HGNC identifiers for interacting proteins (82 rows from 2720) for IntAct processing script.
+#### Fixed issues concerning deletion of rows containing no HGNC identifiers for interacting proteins (82 rows out of 2720) for IntAct processing script.
 #### H1 histone interactions are now also counted for all databases.
 
 ### 13.09.19 Friday
