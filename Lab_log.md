@@ -9,6 +9,7 @@
 4. Interaction
 5. Interactor_gene
 6. Classification.
+
 | Node | Parent | Rank | Description |
 |:---:|:---:|:---:|:---:|
 |1|-|0|Interactors|
