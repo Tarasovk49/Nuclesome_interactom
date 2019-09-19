@@ -9,9 +9,10 @@
 4. Interaction
 5. Interactor_gene
 6. Classification.
+
 | Node | Parent | Rank | Description |
 |:---:|:---:|:---:|:---:|
-|||||
+|-|-|-|-|
 7. 3D_interaction
 8. 3D_structure
 9. PDB_homology
