@@ -9,7 +9,7 @@
 #### Features of database
 **Tables = django classes:**
 1. Histone
-2. Мariant
+2. Variant
 3. Histone_type
 4. Interaction
 
