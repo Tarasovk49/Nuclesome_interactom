@@ -38,8 +38,8 @@ Must contain methods *get_parent*, *get_children*.
 10. DB_info
 
 Plan is to create first six classes - *browse/models.py*.
-- *browse/views.py* - generate pages.
-- *browse/templates.py* - scaffold of web-pages, where data is uploaded.
+- *browse/views.py* - generates pages. Use templates and supply data to them.
+- *browse/templates.py* - scaffold of web-pages, where data must be supplied.
 - *browse/urls.py* - manage queries.
 - *browse/management/commands/buildvariants.py* - functions to rebuild database.
 
