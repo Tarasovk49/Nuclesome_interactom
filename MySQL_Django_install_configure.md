@@ -67,7 +67,7 @@ To enter MySQL shell:
 You can run some commands:
 
 ```SHOW DATABASES;```
-```CREATE DATABASE nucleosome_data;```
+```CREATE DATABASE NuclIntDB;```
 
 To use MySQL as database for Django modify *settings.py*:
 ```
@@ -89,7 +89,7 @@ sudo pluma /etc/mysql/my.cnf
 ```
 ```
 [client]
-database = nuclosome_data
+database = NuclIntDB
 user = root
 password = your_password
 default-character-set = utf8
