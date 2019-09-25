@@ -1,7 +1,10 @@
 # Lab journal
 
+### 25.09.19 Wednesday
+#### More endeavours with database setup
+
 ### 24.09.19 Tuesday
-##### Endeavours with Pycharm database setup
+#### Endeavours with Pycharm database setup
 
 ### 19.09.19 Thursday
 #### Part of *browse/models.py* and *browse/management/commands/builddb.py* is written.
