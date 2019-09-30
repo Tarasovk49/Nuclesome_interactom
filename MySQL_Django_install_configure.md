@@ -7,6 +7,7 @@
 5. https://www.digitalocean.com/community/tutorials/how-to-create-django-models
 6. https://www.digitalocean.com/community/tutorials/how-to-create-django-views
 7. https://docs.djangoproject.com/en/2.2/intro/tutorial01/
+8. https://djangostars.com/blog/configuring-django-settings-best-practices/
 ### Install Django
 ```
 conda create -n djangoenv python=3.6
